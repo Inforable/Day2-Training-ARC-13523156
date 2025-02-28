@@ -1,0 +1,23 @@
+{
+  "name": "day2-training-arc-13523156",
+  "version": "1.0.0",
+  "description": "",
+  "main": "html/index.html",
+  "scripts": {
+    "start": "http-server ./html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inforable/Day2-Training-ARC-13523156.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Inforable/Day2-Training-ARC-13523156/issues"
+  },
+  "homepage": "https://github.com/Inforable/Day2-Training-ARC-13523156#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

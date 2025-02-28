@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+:root {
+    --primary-color: #4ca1af;
+    --secondary-color: #2c3e50;
+    --accent-color: #e67e22;
+    --text-color: #7f8c8d;
+    --card-bg: #ffffff;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-dark: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #ececec, #f4f4f4);
+}
+
+header {
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    color: #ffffff;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px var(--shadow-dark);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    letter-spacing: 1.2px;
+    position: relative;
+}
+
+header h1::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 4px;
+    margin: 10px auto 0;
+    background: var(--accent-color);
+    border-radius: 2px;
+}
+
+.container {
+    width: 90%;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+.product-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--shadow-light);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--shadow-dark);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h2 {
+    margin: 5px 0;
+    font-size: 1.8em;
+    color: var(--secondary-color);
+}
+
+.separator {
+    border-top: 2px solid var(--accent-color);
+    margin: 10px 0;
+}
+
+.description {
+    margin: 10px 0;
+    color: var(--text-color);
+    line-height: 1.4;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+}
+
+.info-row .label {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.info-row .value {
+    text-align: right;
+    color: var(--text-color);
+}
+
+.price {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.rating {
+    color: var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: var(--secondary-color);
+    color: #ffffff;
+    margin-top: 30px;
+}
